@@ -1,0 +1,44 @@
+## What I Implemented
+
+### Azure Infrastructure
+- Resource Group
+- Virtual Network
+- Multiple subnets
+- NSGs
+- ASGs
+- Windows VM
+- Azure Load Balancer
+- Storage Account
+- Azure Key Vault
+- Log Analytics
+- Azure Monitor
+
+### Networking
+- Network segmentation
+- NSG-based traffic control
+- ASG-based security rules
+- Load Balancer backend pools
+- Health probes
+- Private Endpoint
+- Private DNS concepts
+- TCP connectivity troubleshooting
+
+### Terraform
+- Variables
+- Outputs
+- Resource dependencies
+- Terraform state
+- Terraform modules
+- Infrastructure drift concepts
+- State migration concepts
+- Infrastructure lifecycle management
+
+### DevOps
+- Git
+- Azure Repos
+- Azure DevOps Pipelines
+- Self-hosted agent
+- Terraform CI/CD
+- Pipeline validation
+- Plan/Apply workflow
+- Approval gates
