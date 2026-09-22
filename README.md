@@ -1,2 +1,2 @@
 # Project
-This is Tier-3 Project which shows the implementation of azure arch using terraform and pushing code through git and CI?CD pipeline
+Azure 3-Tier Infrastructure Automation using Terraform, Azure DevOps CI/CD, Azure Networking, Load Balancer, Private Endpoint, Key Vault and Azure Monitor.
