@@ -1,0 +1,8 @@
+rg_name = "Test-rg"
+location = "Central India"
+vnet_name = "Test-vnet"
+Snet01 = "WebSubnet"
+Snet02 = "AppSubnet"
+Snet03 = "DBSubnet"
+Snet04 = "BastionSubnet"
+Snet05 = "PESubnet"
