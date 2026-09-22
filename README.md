@@ -1,8 +1,8 @@
 # Project
 ## Architecture
 
-![Azure 3-Tier Architecture](<img width="1312" height="1199" alt="Tier3 - Azure Arch" src="https://github.com/user-attachments/assets/3c7652d6-bdab-468f-a390-cbcf3d3a4ec4" />
-)
+https://github.com/Prasannakurapati9/azure-3tier-infrastructure-terraform-devops/blob/main/Tier3%20-%20Azure%20Arch.png
+
 # Azure 3-Tier Infrastructure Automation
 
 Infrastructure-as-Code project demonstrating the deployment and management
