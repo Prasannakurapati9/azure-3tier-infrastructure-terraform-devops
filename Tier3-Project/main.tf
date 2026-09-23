@@ -158,7 +158,7 @@ resource "azurerm_network_interface" "nic01" {
     private_ip_address_allocation = "Dynamic"
   }
 }
-/*
+
 resource "azurerm_windows_virtual_machine" "VM01" {
   name                = "Web-VM"
   resource_group_name = azurerm_resource_group.rg01.name
@@ -182,7 +182,7 @@ resource "azurerm_windows_virtual_machine" "VM01" {
     version   = "latest"
   }
 }
-*/
+
 resource "azurerm_network_interface" "nic02" {
   name                = "Web-nic02"
   location            = azurerm_resource_group.rg01.location
@@ -194,7 +194,7 @@ resource "azurerm_network_interface" "nic02" {
     private_ip_address_allocation = "Dynamic"
   }
 }
-/*
+
 resource "azurerm_windows_virtual_machine" "VM02" {
   name                = "Web-VM02"
   resource_group_name = azurerm_resource_group.rg01.name
@@ -218,7 +218,7 @@ resource "azurerm_windows_virtual_machine" "VM02" {
     version   = "latest"
   }
 }
-*/
+
 resource "azurerm_network_interface" "nic03" {
   name                = "App-nic"
   location            = azurerm_resource_group.rg01.location
@@ -230,7 +230,7 @@ resource "azurerm_network_interface" "nic03" {
     private_ip_address_allocation = "Dynamic"
   }
 }
-/*
+
 resource "azurerm_windows_virtual_machine" "VM03" {
   name                = "App-VM"
   resource_group_name = azurerm_resource_group.rg01.name
@@ -254,7 +254,7 @@ resource "azurerm_windows_virtual_machine" "VM03" {
     version   = "latest"
   }
 }
-*/
+
 resource "azurerm_network_interface" "nic04" {
   name                = "DB-nic"
   location            = azurerm_resource_group.rg01.location
@@ -313,13 +313,13 @@ resource "azurerm_lb_backend_address_pool" "web-backend" {
   name            = "Webbackendpool"
   loadbalancer_id = azurerm_lb.Test-LB.id
 }
-/*
+
 resource "azurerm_lb_backend_address_pool_address" "address01" {
   name                    = "Web-vm"
   backend_address_pool_id = azurerm_lb_backend_address_pool.web-backend.id
   virtual_network_name      = azurerm_virtual_network.Vnet01.id
   ip_address              = "10.0.0.1"
-}*/
+}
 
 resource "azurerm_network_interface_backend_address_pool_association" "DB-VM" {
   network_interface_id    = azurerm_network_interface.nic04.id
@@ -397,11 +397,11 @@ resource "azurerm_key_vault" "kv01" {
   rbac_authorization_enabled  = true
 }
 
-/*resource "azurerm_role_assignment" "DB_kv_access" {
+resource "azurerm_role_assignment" "DB_kv_access" {
   scope                = azurerm_key_vault.kv01.id
   role_definition_name = "Key Vault Secrets User"
   principal_id         = azurerm_windows_virtual_machine.VM04.identity[1].principal_id
-}*/
+}
 
 resource "azurerm_log_analytics_workspace" "log01" {
   name                = "test-workspace"
