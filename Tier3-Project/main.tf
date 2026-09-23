@@ -165,7 +165,7 @@ resource "azurerm_windows_virtual_machine" "VM01" {
   location            = "UkSouth"
   size                = "Standard_D2as_v7"
   admin_username      = "azureuser"
-  admin_password      = "Nationindia@91"
+  admin_password      = "**************"
   network_interface_ids = [
     azurerm_network_interface.nic01.id,
   ]
@@ -201,7 +201,7 @@ resource "azurerm_windows_virtual_machine" "VM02" {
   location            = "East US"
   size                = "Standard_D2as_v7"
   admin_username      = "azureuser"
-  admin_password      = "Nationindia@91"
+  admin_password      = "***********"
   network_interface_ids = [
     azurerm_network_interface.nic02.id,
   ]
@@ -237,7 +237,7 @@ resource "azurerm_windows_virtual_machine" "VM03" {
   location            = "East US"
   size                = "Standard_D2as_v7"
   admin_username      = "azureuser"
-  admin_password      = "Nationindia@91"
+  admin_password      = "***************"
   network_interface_ids = [
     azurerm_network_interface.nic03.id,
   ]
