@@ -38,6 +38,63 @@
 - Azure Repos
 - Azure DevOps Pipelines
 - Self-hosted agent
+
+
+## Architecture
+
+Internet
+   |
+Azure Load Balancer
+   |
+Web Tier
+   |
+App Tier
+   |
+Database Tier
+   |
+Storage / Private Endpoint
+
+## Terraform Modules
+
+- Network
+- Compute
+- Load Balancer
+- Storage
+- Key Vault
+- Monitoring
+
+## Technologies
+
+- Microsoft Azure
+- Terraform
+- Azure DevOps
+- Azure Networking
+- Azure Load Balancer
+- Azure Storage
+- Azure Key Vault
+- Azure Monitor
+- Log Analytics
+
+## Terraform Structure
+
+The root module composes multiple child modules using
+local module sources.
+
+## CI/CD
+
+Git
+ ↓
+Azure DevOps
+ ↓
+Terraform fmt
+ ↓
+Terraform validate
+ ↓
+Terraform plan
+ ↓
+Approval
+ ↓
+Terraform apply
 - Terraform CI/CD
 - Pipeline validation
 - Plan/Apply workflow
